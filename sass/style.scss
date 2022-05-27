@@ -77,3 +77,57 @@ body {
 .fonctionnement {
     padding-left: 3%;
 }
+
+.restaurants {
+    padding: 10% 0 0 4%;
+    background-color: rgb(228, 228, 228);
+}
+
+.restaurants-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0;
+    width: 95%;
+    height: 220px;
+    border-radius: 20px;
+    margin-top: 45px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+
+    img {
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        height: 70%;
+        padding: 0;
+    }
+}
+
+.restaurants-card_body {
+    display: flex;
+    justify-content: space-between;
+    height: 30%;
+
+    i {
+        font-size: large;
+        color: rgb(80, 80, 80);
+        padding: 8%;
+    }
+}
+
+.restaurants-card_body_description {
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: rgb(80, 80, 80);
+        font-size: small;
+    }
+}
