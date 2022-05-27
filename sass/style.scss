@@ -1,34 +1,34 @@
-@import "libs/normalize.scss";
+@import "libs/_normalize.scss";
+@import "libs/variables";
 
 
-*{
-    box-sizing: content-box;
-}
+// *{
+//     box-sizing: content-box;
+// }
 
-header{
+header {
     display: flex;
     justify-content: center;
     width: 100%;
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
 
-    img{
+    img {
         width: 60%;
         padding: 5% 0 5% 0;
     }
- }
+}
 
- .localisation{
-     display: flex;
-     justify-content: center;
-     background-color: rgb(228, 228, 228);
-     font-family: 'Roboto', sans-serif;
-     color: black;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     margin-top: 2.2px;
+.localisation {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+    font-family: $txt-txt;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2.2px;
 
-        i{
-            padding: 0 3% 0 3%;
-        }
- }
-
+    i {
+        padding: 0 3% 0 3%;
+    }
+}
