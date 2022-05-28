@@ -337,11 +337,15 @@ template {
   display: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   display: flex;
   justify-content: center;
   width: 100%;
-  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 4px 0 rgba(102, 102, 102, 0.3);
 }
 header img {
   width: 40%;
@@ -355,7 +359,7 @@ body {
 .localisation {
   display: flex;
   justify-content: center;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(234, 234, 234);
   color: black;
   padding-top: 10px;
   padding-bottom: 13px;
@@ -371,7 +375,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(241, 241, 240);
+  background-color: rgb(246, 246, 246);
   padding-bottom: 10%;
 }
 .explorer h2 {
@@ -390,20 +394,33 @@ body {
   color: white;
   padding: 16px;
   border-radius: 30px;
+  box-shadow: 0 5px 5px 0 rgba(70, 70, 70, 0.2);
 }
 .explorer a {
   margin: 8% 0 8% 0;
-  text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
 .fonctionnement {
   padding-left: 3%;
 }
+.fonctionnement ol {
+  list-style: none;
+}
+.fonctionnement ol li {
+  margin-bottom: 15%;
+}
+.fonctionnement ol li span {
+  color: white;
+  background-color: #9356DC;
+  padding-left: 5px;
+  border-radius: 20px;
+  margin-right: 3%;
+}
 
 .restaurants {
-  padding: 10% 0 0 4%;
-  background-color: rgb(228, 228, 228);
+  padding: 10% 0 15% 4%;
+  background-color: rgb(246, 246, 246);
 }
 
 .restaurants-card {
@@ -415,7 +432,7 @@ body {
   height: 220px;
   border-radius: 20px;
   margin-top: 45px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px 0 rgba(70, 70, 70, 0.2);
 }
 .restaurants-card img {
   object-fit: cover;
@@ -442,13 +459,39 @@ body {
 }
 .restaurants-card_body_description h4 {
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 5%;
 }
 .restaurants-card_body_description p {
   margin-top: 0;
   margin-bottom: 0;
   color: rgb(80, 80, 80);
   font-size: small;
+}
+
+footer {
+  background-color: rgb(53, 53, 53);
+  padding-bottom: 4%;
+}
+footer img {
+  filter: invert(1);
+  width: 28%;
+  padding: 10% 0 0 8%;
+}
+footer ul {
+  list-style: none;
+  color: white;
+  margin-left: -1;
+  padding-left: 30px;
+}
+footer ul li {
+  padding-bottom: 3%;
+}
+footer ul li i {
+  font-size: small;
+  padding-right: 5%;
+}
+footer ul li a {
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */
