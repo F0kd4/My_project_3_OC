@@ -1,0 +1,30 @@
+footer {
+    background-color: rgb(53, 53, 53);
+    padding-bottom: 4%;
+
+    img {
+        filter: invert(1);
+        width: 28%;
+        padding: 10% 0 0 8%;
+    }
+
+    ul {
+        list-style: none;
+        color: white;
+        margin-left: -1;
+        padding-left: 30px;
+
+        li {
+            padding-bottom: 3%;
+
+            i {
+                font-size: small;
+                padding-right: 5%;
+            }
+
+            a {
+                color: rgb(255, 255, 255)
+            }
+        }
+    }
+}
