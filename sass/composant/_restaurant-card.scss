@@ -1,6 +1,4 @@
 .restaurants-card {
-    display: flex;
-    flex-direction: column;
     background-color: white;
     padding: 0;
     width: 95%;
@@ -9,11 +7,21 @@
     margin-top: 45px;
     box-shadow: $shadow;
 
+    a {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 220px;
+        // border-radius: 20px;
+        color: black;
+    }
+
     img {
         object-fit: cover;
         border-radius: 20px 20px 0 0;
         height: 70%;
         padding: 0;
+        width: 100%;
     }
 
 
@@ -29,6 +37,7 @@
         }
     }
 }
+
 .restaurants-card_body_description {
     margin-top: 1%;
     margin-left: 5%;

@@ -41,20 +41,33 @@
 }
 
 .fonctionnement {
-    padding-left: 3%;
+    padding: 6% 3% 6% 3%;
 
     ol {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         list-style: none;
 
         li {
-            margin-bottom: 15%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background-color: rgb(246, 246, 246);
+            padding: 6% 0 6% 0;
+            border-radius: 15px;
+            box-shadow: $shadow;
 
             span {
                 color: white;
                 background-color: $color-primary;
-                padding-left: 5px;
-                border-radius: 20px;
+                padding: 0.9% 2.2% 0.9% 2.2%;
+                border-radius: 50%;
                 margin-right: 3%;
+            }
+
+            i {
+                color: rgb(141, 141, 141);
+                padding: 0 3% 0 3%;
             }
         }
     }
