@@ -7,6 +7,7 @@
     margin-top: 45px;
     box-shadow: $shadow;
 
+
     a {
         display: flex;
         flex-direction: column;
@@ -14,7 +15,20 @@
         height: 220px;
         // border-radius: 20px;
         color: black;
+
+        #new-item {
+            position: absolute;
+            left: 73%;
+            font-size: small;
+            font-weight: 500;
+            background-color: $color-tertiary;
+            color: rgb(0, 135, 102);
+            padding: 1% 2% 1% 2%;
+            border-radius: 5%;
+        }
     }
+
+
 
     img {
         object-fit: cover;

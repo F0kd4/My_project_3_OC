@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(246, 246, 246);
+    background-color: $background-grey;
     padding-bottom: 10%;
 
     h2 {
@@ -46,12 +46,13 @@
     ol {
         display: flex;
         flex-direction: column;
-        align-content: center;
         list-style: none;
 
         li {
+            display: inline-block;
             margin-top: 5%;
             margin-bottom: 5%;
+            margin-right: 5%;
             background-color: rgb(246, 246, 246);
             padding: 6% 0 6% 0;
             border-radius: 15px;
@@ -75,5 +76,5 @@
 
 .restaurants {
     padding: 10% 0 15% 4%;
-    background-color: rgb(246, 246, 246);
+    background-color: $background-grey;
 }
