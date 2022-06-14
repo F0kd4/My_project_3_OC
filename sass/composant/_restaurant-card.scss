@@ -7,13 +7,16 @@
     margin-top: 45px;
     box-shadow: $shadow;
 
+    @include desktop-only {
+        width: 22%;
+    }
+
 
     a {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 220px;
-        // border-radius: 20px;
         color: black;
 
         #new-item {
@@ -25,6 +28,29 @@
             color: rgb(0, 135, 102);
             padding: 1% 2% 1% 2%;
             border-radius: 5%;
+
+            @include desktop-only {
+                position: absolute;
+                left: 5%;
+                padding: 0.2% 0.4% 0.2% 0.4%;
+            }
+        }
+
+        #new-item2 {
+            position: absolute;
+            left: 73%;
+            font-size: small;
+            font-weight: 500;
+            background-color: $color-tertiary;
+            color: rgb(0, 135, 102);
+            padding: 1% 2% 1% 2%;
+            border-radius: 5%;
+
+            @include desktop-only {
+                position: absolute;
+                left: 29.3%;
+                padding: 0.2% 0.4% 0.2% 0.4%;
+            }
         }
     }
 

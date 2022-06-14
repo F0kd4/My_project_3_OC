@@ -3,28 +3,57 @@
     justify-content: center;
     background-color: rgb(234, 234, 234);
     color: black;
+    padding-left: 25%;
     padding-top: 10px;
     padding-bottom: 13px;
     margin-top: 2.2px;
     margin-bottom: 0;
 
+    @include desktop-only {
+        padding-left: 0%;
+    }
+
     i {
-        padding: 0 4% 0 4%;
+        padding: 1% 4% 0 0%;
+        color: rgb(53, 53, 53);
+
+        @include desktop-only {
+            padding: 0 3% 0 0;
+        }
+    }
+
+    input {
+        background-color: rgb(234, 234, 234);
+        border-style: none;
+        outline: unset;
     }
 }
+
+.responsive-display {
+    @include desktop-only {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 
 .explorer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    background-color: $background-grey;
+    background-color: $background;
+    padding-top: 3%;
     padding-bottom: 10%;
+
+    @include desktop-only {
+        width: 50%;
+        padding-bottom: 0%;
+    }
 
     h2 {
         text-align: center;
         padding: 0;
-        font-size: 30px;
+        font-size: 25px;
         padding: 0 10% 0 10%;
         margin-bottom: 0;
     }
@@ -32,31 +61,65 @@
     p {
         text-align: center;
         color: rgb(80, 80, 80);
+
+        @include desktop-only {
+            margin-bottom: 20%;
+        }
     }
 
     a {
         margin: 8% 0 8% 0;
         color: rgb(255, 255, 255);
+
+        @include desktop-only {
+            margin: 4% 0 4% 0;
+        }
     }
 }
 
 .fonctionnement {
-    padding: 6% 3% 6% 3%;
+    padding: 3% 3% 3% 3%;
+
+    @include desktop-only {
+        padding-left: 15%;
+    }
+
+    h2 {
+        @include desktop-only {
+            padding-left: 35%;
+        }
+    }
 
     ol {
         display: flex;
         flex-direction: column;
         list-style: none;
+        padding-left: 4%;
 
         li {
-            display: inline-block;
             margin-top: 5%;
             margin-bottom: 5%;
             margin-right: 5%;
-            background-color: rgb(246, 246, 246);
-            padding: 6% 0 6% 0;
+            background-color: $background;
+            padding: 6% 0 6% 0%;
             border-radius: 15px;
             box-shadow: $shadow;
+
+            &:hover {
+                background-color: rgb(245, 237, 255);
+
+                i {
+                    color: $color-primary;
+                }
+            }
+
+            @include desktop-only {
+                width: 300%;
+                font-size: large;
+                margin-top: 25%;
+                margin-left: -65%;
+                padding: 9% 0 9% 0;
+            }
 
             span {
                 color: white;
@@ -64,11 +127,19 @@
                 padding: 0.9% 2.2% 0.9% 2.2%;
                 border-radius: 50%;
                 margin-right: 3%;
+                margin-left: -3%;
             }
 
             i {
                 color: rgb(141, 141, 141);
                 padding: 0 3% 0 3%;
+                margin-right: 5%;
+
+
+                @include desktop-only {
+                    margin-left: 5%;
+                    margin-right: 15%;
+                }
             }
         }
     }
@@ -76,5 +147,21 @@
 
 .restaurants {
     padding: 10% 0 15% 4%;
-    background-color: $background-grey;
+    background-color: $background;
+
+    @include desktop-only {
+        padding: 1% 0 5% 3%;
+    }
+
+    .responsive-display {
+        @include desktop-only {
+            justify-content: space-around;
+        }
+    }
+
+    i {
+        @include desktop-only {
+            margin-top: -1.8%;
+        }
+    }
 }

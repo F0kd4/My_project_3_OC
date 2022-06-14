@@ -362,6 +362,11 @@ body {
   margin-top: 45px;
   box-shadow: 0 5px 5px 0 rgba(70, 70, 70, 0.2);
 }
+@media (min-width: 992px) {
+  .restaurants-card {
+    width: 22%;
+  }
+}
 .restaurants-card a {
   display: flex;
   flex-direction: column;
@@ -378,6 +383,30 @@ body {
   color: rgb(0, 135, 102);
   padding: 1% 2% 1% 2%;
   border-radius: 5%;
+}
+@media (min-width: 992px) {
+  .restaurants-card a #new-item {
+    position: absolute;
+    left: 5%;
+    padding: 0.2% 0.4% 0.2% 0.4%;
+  }
+}
+.restaurants-card a #new-item2 {
+  position: absolute;
+  left: 73%;
+  font-size: small;
+  font-weight: 500;
+  background-color: rgb(153, 226, 208);
+  color: rgb(0, 135, 102);
+  padding: 1% 2% 1% 2%;
+  border-radius: 5%;
+}
+@media (min-width: 992px) {
+  .restaurants-card a #new-item2 {
+    position: absolute;
+    left: 29.3%;
+    padding: 0.2% 0.4% 0.2% 0.4%;
+  }
 }
 .restaurants-card img {
   object-fit: cover;
@@ -427,19 +456,43 @@ header i {
   top: 3%;
   left: 10%;
 }
+@media (min-width: 992px) {
+  header i {
+    font-size: 200%;
+    position: absolute;
+    top: 11%;
+    left: 7%;
+  }
+}
 header img {
   width: 40%;
   padding: 5% 0 5% 0;
+}
+@media (min-width: 992px) {
+  header img {
+    width: unset;
+  }
 }
 
 footer {
   background-color: rgb(53, 53, 53);
   padding-bottom: 4%;
 }
+@media (min-width: 992px) {
+  footer {
+    padding-bottom: 2%;
+  }
+}
 footer img {
   filter: invert(1);
   width: 28%;
   padding: 10% 0 0 8%;
+}
+@media (min-width: 992px) {
+  footer img {
+    width: 10%;
+    padding: 2% 0 1% 3%;
+  }
 }
 footer ul {
   list-style: none;
@@ -447,8 +500,19 @@ footer ul {
   margin-left: -1;
   padding-left: 30px;
 }
+@media (min-width: 992px) {
+  footer ul {
+    display: flex;
+  }
+}
 footer ul li {
   padding-bottom: 3%;
+}
+@media (min-width: 992px) {
+  footer ul li {
+    padding: 0 10% 0 1.5%;
+    width: 120%;
+  }
 }
 footer ul li i {
   font-size: small;
@@ -463,27 +527,57 @@ footer ul li a {
   justify-content: center;
   background-color: rgb(234, 234, 234);
   color: black;
+  padding-left: 25%;
   padding-top: 10px;
   padding-bottom: 13px;
   margin-top: 2.2px;
   margin-bottom: 0;
 }
+@media (min-width: 992px) {
+  .localisation {
+    padding-left: 0%;
+  }
+}
 .localisation i {
-  padding: 0 4% 0 4%;
+  padding: 1% 4% 0 0%;
+  color: rgb(53, 53, 53);
+}
+@media (min-width: 992px) {
+  .localisation i {
+    padding: 0 3% 0 0;
+  }
+}
+.localisation input {
+  background-color: rgb(234, 234, 234);
+  border-style: none;
+  outline: unset;
+}
+
+@media (min-width: 992px) {
+  .responsive-display {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .explorer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   background-color: rgb(246, 246, 246);
+  padding-top: 3%;
   padding-bottom: 10%;
+}
+@media (min-width: 992px) {
+  .explorer {
+    width: 50%;
+    padding-bottom: 0%;
+  }
 }
 .explorer h2 {
   text-align: center;
   padding: 0;
-  font-size: 30px;
+  font-size: 25px;
   padding: 0 10% 0 10%;
   margin-bottom: 0;
 }
@@ -491,28 +585,63 @@ footer ul li a {
   text-align: center;
   color: rgb(80, 80, 80);
 }
+@media (min-width: 992px) {
+  .explorer p {
+    margin-bottom: 20%;
+  }
+}
 .explorer a {
   margin: 8% 0 8% 0;
   color: rgb(255, 255, 255);
 }
+@media (min-width: 992px) {
+  .explorer a {
+    margin: 4% 0 4% 0;
+  }
+}
 
 .fonctionnement {
-  padding: 6% 3% 6% 3%;
+  padding: 3% 3% 3% 3%;
+}
+@media (min-width: 992px) {
+  .fonctionnement {
+    padding-left: 15%;
+  }
+}
+@media (min-width: 992px) {
+  .fonctionnement h2 {
+    padding-left: 35%;
+  }
 }
 .fonctionnement ol {
   display: flex;
   flex-direction: column;
   list-style: none;
+  padding-left: 4%;
 }
 .fonctionnement ol li {
-  display: inline-block;
   margin-top: 5%;
   margin-bottom: 5%;
   margin-right: 5%;
   background-color: rgb(246, 246, 246);
-  padding: 6% 0 6% 0;
+  padding: 6% 0 6% 0%;
   border-radius: 15px;
   box-shadow: 0 5px 5px 0 rgba(70, 70, 70, 0.2);
+}
+.fonctionnement ol li:hover {
+  background-color: rgb(245, 237, 255);
+}
+.fonctionnement ol li:hover i {
+  color: #9356DC;
+}
+@media (min-width: 992px) {
+  .fonctionnement ol li {
+    width: 300%;
+    font-size: large;
+    margin-top: 25%;
+    margin-left: -65%;
+    padding: 9% 0 9% 0;
+  }
 }
 .fonctionnement ol li span {
   color: white;
@@ -520,28 +649,67 @@ footer ul li a {
   padding: 0.9% 2.2% 0.9% 2.2%;
   border-radius: 50%;
   margin-right: 3%;
+  margin-left: -3%;
 }
 .fonctionnement ol li i {
   color: rgb(141, 141, 141);
   padding: 0 3% 0 3%;
+  margin-right: 5%;
+}
+@media (min-width: 992px) {
+  .fonctionnement ol li i {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
 }
 
 .restaurants {
   padding: 10% 0 15% 4%;
   background-color: rgb(246, 246, 246);
 }
+@media (min-width: 992px) {
+  .restaurants {
+    padding: 1% 0 5% 3%;
+  }
+}
+@media (min-width: 992px) {
+  .restaurants .responsive-display {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 992px) {
+  .restaurants i {
+    margin-top: -1.8%;
+  }
+}
 
 .img-restaurant {
-  height: 350px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+@media (min-width: 992px) {
+  .img-restaurant {
+    height: 950px;
+  }
 }
 
 .menu-restaurant {
+  position: relative;
   background-color: rgb(246, 246, 246);
   padding-top: 4%;
   padding-left: 3%;
   padding-bottom: 5%;
+  margin-top: -8%;
   margin-bottom: 0;
   border-radius: 30px 30px 0 0;
+}
+@media (min-width: 992px) {
+  .menu-restaurant {
+    margin-top: -3%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
 }
 .menu-restaurant h2 {
   display: flex;
@@ -560,27 +728,6 @@ footer ul li a {
   margin-right: 88%;
 }
 
-.menu-item {
-  background-color: white;
-  box-shadow: 0 5px 5px 0 rgba(70, 70, 70, 0.2);
-  padding-right: 4%;
-  padding-left: 4%;
-  border-radius: 20px;
-  margin-right: 3%;
-}
-.menu-item h3 {
-  padding-top: 3%;
-  margin-bottom: 0;
-}
-.menu-item__description {
-  padding-top: 0;
-  display: flex;
-  justify-content: space-between;
-}
-.menu-item__description .price {
-  font-weight: bold;
-}
-
 .order {
   display: flex;
   justify-content: center;
@@ -590,6 +737,48 @@ footer ul li a {
   margin-bottom: 15%;
   padding-left: 15%;
   padding-right: 15%;
+}
+@media (min-width: 992px) {
+  .order #btn-order {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 5px 5px 0 rgba(70, 70, 70, 0.2);
+  padding-right: 4%;
+  padding-left: 4%;
+  border-radius: 20px;
+  margin-right: 3%;
+  margin-top: 5%;
+}
+@media (min-width: 992px) {
+  .menu-item {
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+.menu-item__description {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.menu-item__description h3 {
+  padding-top: 3%;
+  margin-bottom: 0;
+}
+.menu-item__description .ingredients {
+  margin-top: 5%;
+}
+.menu-item .price {
+  font-weight: bold;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

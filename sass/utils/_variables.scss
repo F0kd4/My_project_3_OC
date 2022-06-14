@@ -2,7 +2,7 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: rgb(153, 226, 208);
-$background-grey: rgb(246, 246, 246);
+$background: rgb(246, 246, 246);
 
 // Polices
 $txt-title: 'Shrikhand', cursive;
@@ -10,3 +10,9 @@ $txt-txt: 'Roboto', sans-serif;
 
 //Box-shadow
 $shadow: 0 5px 5px 0 rgba(70, 70, 70, 0.2);
+
+//Map Breakpoints
+$breakpoints: (
+    tablet: 768px,
+    desktop: 992px
+);
