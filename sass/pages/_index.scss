@@ -3,14 +3,18 @@
     justify-content: center;
     background-color: rgb(234, 234, 234);
     color: black;
-    padding-left: 25%;
+    padding-left: 26%;
     padding-top: 10px;
     padding-bottom: 13px;
     margin-top: 2.2px;
     margin-bottom: 0;
 
-    @include desktop-only {
-        padding-left: 0%;
+     @include desktop-only{
+         padding-left: 20%;
+     }
+
+    @include tablet-only {
+        padding-right: 18%;
     }
 
     i {

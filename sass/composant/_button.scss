@@ -4,4 +4,9 @@
      padding: 16px;
      border-radius: 30px;
      box-shadow: $shadow;
+
+     &:hover {
+         opacity: 0.8;
+         box-shadow: 0 5px 5px 0 rgba(70, 70, 70, 0.5);
+     }
  }

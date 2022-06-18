@@ -1,0 +1,75 @@
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 1000;
+    animation: fade 2500ms ease-in-out forwards;
+
+    @keyframes fade {
+        90% {
+            z-index: 1000;
+        }
+
+        100% {
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+
+
+    .loading-logo1 {
+        z-index: 1;
+        position: absolute;
+        top: 51.2%;
+        right: -21%;
+        filter: invert(1);
+        animation: anim-logo1 3000ms ease-in-out;
+    }
+
+    @keyframes anim-logo1 {
+        100% {
+            right: 150%;
+        }
+    }
+
+    .loading-logo2 {
+        z-index: 2;
+        position: absolute;
+        top: 51.5%;
+        left: -20.5%;
+        animation: anim-logo2 3000ms ease-in-out forwards;
+    }
+
+    @keyframes anim-logo2 {
+        100% {
+            left: 150%;
+        }
+    }
+}
+
+
+.loading-spinner {
+    z-index: 1003;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(40deg, $color-secondary, $color-primary);
+    font-size: 350%;
+    animation: anim-loader 750ms cubic-bezier(.52, .64, .84, .51);
+
+    @include desktop-only {
+        font-size: 500%;
+        left: 50%;
+    }
+
+    @keyframes anim-loader {
+        100% {
+            transform: rotate(1turn);
+        }
+    }
+}
