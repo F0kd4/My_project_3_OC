@@ -511,10 +511,6 @@ body {
   }
 }
 
-.heart-full {
-  display: none;
-}
-
 .restaurants-card_body_description {
   margin-top: 1%;
   margin-left: 5%;
@@ -884,6 +880,13 @@ footer ul li a {
   margin-top: 5%;
   overflow: hidden;
 }
+@media (min-width: 992px) {
+  .menu-item {
+    padding-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
 .menu-item:hover .menu-item__ordered {
   animation: order 1000ms ease-in forwards;
 }
@@ -898,14 +901,7 @@ footer ul li a {
 }
 @keyframes rotation {
   100% {
-    transform: rotate(2turn);
-  }
-}
-@media (min-width: 992px) {
-  .menu-item {
-    padding-left: 1%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    transform: rotate(-2turn);
   }
 }
 .menu-item__description {
@@ -915,11 +911,17 @@ footer ul li a {
   width: 75%;
 }
 .menu-item__description h3 {
+  font-size: 100%;
   padding-top: 3%;
   margin-bottom: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (min-width: 992px) {
+  .menu-item__description h3 {
+    padding-top: 0%;
+  }
 }
 .menu-item__description .ingredients {
   font-size: 85%;
@@ -928,10 +930,15 @@ footer ul li a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media (min-width: 992px) {
+  .menu-item__description .ingredients {
+    margin-top: 2%;
+  }
+}
 .menu-item .price {
   font-weight: bold;
   align-self: flex-end;
-  width: 10%;
+  width: 15%;
 }
 @media (min-width: 992px) {
   .menu-item .price {
@@ -946,6 +953,15 @@ footer ul li a {
   width: 0%;
   margin-left: 0;
   margin-right: 0;
+}
+
+.heart-full {
+  color: #9356DC;
+  opacity: 0;
+}
+
+.fa-stack:hover .heart-full {
+  opacity: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -76,7 +76,7 @@
         justify-content: space-between;
         height: 30%;
 
-        span{
+        span {
             display: flex;
             align-items: center;
             height: 100%;
@@ -85,12 +85,8 @@
 
         @include tablet-only {
             height: 35%;
-        }        
+        }
     }
-}
-
-.heart-full{
-    display: none;
 }
 
 .restaurants-card_body_description {

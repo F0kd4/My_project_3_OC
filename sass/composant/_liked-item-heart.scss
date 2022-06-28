@@ -1,0 +1,13 @@
+.heart-full {
+    color: $color-primary;
+    opacity: 0;
+}
+
+.fa-stack:hover {
+
+    .heart-full {
+        opacity: 100%;
+    }
+
+
+}
