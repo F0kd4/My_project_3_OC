@@ -4,11 +4,11 @@
         object-fit: cover;
 
         @include desktop-only {
-                height: 800px;
+                height: 400px;
         }
 
         @include tablet-only {
-                height: 550px;
+                height: 350px;
         }
 }
 
