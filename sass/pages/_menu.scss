@@ -47,6 +47,45 @@
         }
 }
 
+.display_menu {
+        @include desktop-only {
+                display: flex;
+                justify-content: space-evenly;
+        }
+}
+
+@for $i from 1 through 3 {
+        .menu__categories:nth-child(#{$i}) {
+                animation-delay: #{$i*0.6}s;
+        }
+}
+
+
+.menu__categories {
+        animation: magictrick 1s forwards;
+        opacity: 0;
+
+        @include desktop-only {
+                width: 30%;
+        }
+
+        @keyframes magictrick {
+                0% {
+                        transform: translateY(20px);
+                        opacity: 0;
+                }
+
+                100% {
+                        transform: translateY(0px);
+                        opacity: 1;
+                }
+        }
+
+
+}
+
+
+
 .order {
         display: flex;
         justify-content: center;
