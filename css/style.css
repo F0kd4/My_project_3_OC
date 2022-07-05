@@ -540,19 +540,22 @@ header {
   box-shadow: 0 3px 4px 0 rgba(102, 102, 102, 0.3);
 }
 header a {
+  display: flex;
   color: black;
 }
 header i {
+  align-self: center;
   position: absolute;
-  top: 3%;
-  left: 10%;
+  left: 8%;
 }
 @media (min-width: 992px) {
   header i {
     font-size: 200%;
-    position: absolute;
-    top: 6%;
-    left: 7%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header i {
+    font-size: 150%;
   }
 }
 header img {
